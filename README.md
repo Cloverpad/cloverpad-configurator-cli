@@ -20,6 +20,12 @@ The CLI configurator is a Rust project. Make sure you have the following things 
 - On Linux, a few other dependencies are needed:
   - [serialport-rs Dependencies](https://github.com/serialport/serialport-rs#dependencies)
 
+Clone this repository including submodules:
+
+```bash
+git clone --recurse-submodules https://github.com/Cloverpad/cloverpad-configurator-cli.git
+```
+
 Then use one of the following commands to run the project:
 
 ```bash
