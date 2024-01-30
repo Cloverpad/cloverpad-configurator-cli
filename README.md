@@ -6,6 +6,12 @@ This repository contains a CLI configurator application for the [Cloverpad](http
 
 **WIP**
 
+On Linux, `udev` rules also need to be setup to grant user access to the relevant keypads.
+
+- Download a copy of [`99-cloverpad.rules`](./udev/99-cloverpad.rules)
+- Move this into `/etc/udev/rules.d`
+- Restart `udev`: `sudo udevadm control --reload-rules && sudo udevadm trigger`
+
 ## Setting Up Development Environment
 
 The CLI configurator is a Rust project. Make sure you have the following things installed:
