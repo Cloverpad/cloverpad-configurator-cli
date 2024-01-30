@@ -1,0 +1,30 @@
+[workspace]
+members = ["app", "core"]
+resolver = "2"
+
+[workspace.package]
+version = "0.1.0"
+authors = ["Jon Pacheco <jon.pacheco2@gmail.com>"]
+edition = "2021"
+license = "GPL-3.0"
+repository = "https://github.com/Cloverpad/cloverpad-configurator-cli"
+homepage = "https://github.com/Cloverpad"
+
+[workspace.dependencies]
+# Keypad Dependencies
+cloverpad-configurator = { version = "0.1", path = "app" }
+cloverpad-core = { version = "0.1", path = "core" }
+
+# Core Project Dependencies
+log = "0.4"
+prost = "0.12"
+prost-build = "0.12"
+serialport = "4.3"
+thiserror = "1"
+
+# Configurator Dependencies
+anyhow = "1"
+clap = { version = "4.4", features = ["derive"] }
+env_logger = "0.11"
+rustyline = "13"
+shlex = "1.3"

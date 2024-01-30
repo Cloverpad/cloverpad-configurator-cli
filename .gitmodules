@@ -1,0 +1,3 @@
+[submodule "core/src/protocol"]
+	path = core/src/protocol
+	url = git@github.com:Cloverpad/cloverpad-serial-protocol.git
